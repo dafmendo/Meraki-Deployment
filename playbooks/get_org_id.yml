@@ -10,3 +10,7 @@
       cisco.meraki.organizations_info:
         meraki_api_key: "{{ meraki_key }}"
       register: result
+
+    - name: Print Org_ID
+      debug:
+        msg: "{{ result }}"
