@@ -12,7 +12,11 @@
         meraki_api_key: "{{ meraki_key }}"
         organizationId: "{{ org_id }}"
       register: result
-      
+
+    - name: Print Organization Networks
+      debug:
+        msg: "{{ result }}"
+        
     - name: Get network_id
       set_fact:
         network_id: "{{ item.id }}"
