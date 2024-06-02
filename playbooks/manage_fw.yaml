@@ -2,7 +2,7 @@
 - hosts: localhost
 
   vars:
-   meraki_key: "{{ meraki_key }}"
+   meraki_api_key: "{{ meraki_key }}"
    org_id: "{{ org_id }}"
    network_name: "{{ network_name }}"
 
